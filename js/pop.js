@@ -1,11 +1,11 @@
-var fullImgBox = document.getElementById("fullImgBox");
-var fullImg = document.getElementById("fullImg");
+const fullImgBox = document.querySelector("#fullImgBox");
+const fullImg = document.querySelector("#fullImg");
 
-function showFullImg(pic) {
+const showFullImg = (pic) => {
   fullImgBox.classList.add("active");
   fullImg.src = pic;
-}
+};
 
-function closeFullBox() {
+const closeFullBox = () => {
   fullImgBox.classList.remove("active");
-}
+};
